@@ -1,0 +1,17 @@
+scalar JSON
+
+input CypherQueryInput {
+    cypherQuery: String
+    cypherParameters: JSON
+}
+
+type CypherExecutionResult {
+    error: String
+    headers: [String]
+    numRows: Int
+    rows: [JSON]
+}
+
+type Query {
+    executeCypherQuery(input: CypherQueryInput): CypherExecutionResult
+}

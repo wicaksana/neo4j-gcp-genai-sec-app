@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon --exec babel-node src/index.js src/schema.graphql",
+    "seedDb": "./node_modules/.bin/babel-node src/seed/seed-db.js"
+  },
+  "dependencies": {
+    "@neo4j/graphql": "^3.5.1",
+    "apollo-server": "^3.10.0",
+    "graphql": "^16.5.0",
+    "neo4j-driver": "^4.4.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/node": "^7.18.9",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/runtime": "^7.18.9",
+    "nodemon": "^2.0.19"
+  }
+}

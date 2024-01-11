@@ -1,0 +1,5 @@
+# Needed for Cloud Run
+gradio
+langchain
+google-cloud-aiplatform
+graphdatascience

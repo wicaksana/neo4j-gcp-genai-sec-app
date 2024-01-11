@@ -1,0 +1,8 @@
+### For Notebook & local app development
+jupyter
+graphdatascience
+langchain
+langchain-community
+gradio
+google-cloud-aiplatform
+google-cloud-storage
